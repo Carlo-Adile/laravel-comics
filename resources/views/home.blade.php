@@ -1,30 +1,27 @@
 @extends('layouts.app')
 
 @section('content')
-  <div class="container-fluid">
+  <div id="jumbotron">
+    <img src="{{ Vite::asset('resources/img/jumbotron.jpg')}}" alt="">
+  </div>
+  <div class="container-xl">
     {{-- jumbotron --}}
-    <div id="jumbotron">
-      <img src="{{ Vite::asset('resources/img/jumbotron.jpg')}}" alt="">
-    </div>
+    
     {{-- comics --}}
-    <div class="row g-4 p-4">
-      <h2>CARD HERE:</h2>
+    <div class="row g-4 my-4">
+
       @foreach ($comics as $comic)
-        <div class="col-6 col-md-4 col-lg-3 mb-4">
-        
-          <div class="card border-0" id="comic_thumb">
-            <img src="{{ $comic['thumb'] }}" alt="" class="card-img-top">
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="card" id="comic_thumb">
+            <img src="{{ $comic['thumb'] }}" alt="{{ $comic['title'] }}" class="card-img">
             <div class="card-body">
-              <p>{{ $comic['title'] }}</p>
+              <p>{{ $comic['series'] }}</p>
             </div>
           </div>
-
         </div>
       @endforeach
-      <h1>
-        prova
-      </h1>
       
+      <a class="btn btn-primary mx-auto" href="#" role="button" style="width: 200px; border-radius: 0; font-weight: bold;">LOAD MORE</a>
     </div>
   </div>
   

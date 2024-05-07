@@ -2,7 +2,11 @@
 
 *{
   box-sizing: border-box;
-  padding: 0;
+
+}
+:root{
+  --dark: #1c1c1c;
+  --primary: #0282f9;
 }
 
 footer {
@@ -36,6 +40,16 @@ footer {
   background-repeat: no-repeat;
   background-size: cover;
 
+  #top_section{
+    background-color: var(--primary);
+    color: white;
+    text-transform: uppercase;
+    
+    a{
+      text-decoration: none;
+    }
+  }
+
   #logo_placeholder {
     width: 100%;
     height: 100%;
@@ -49,9 +63,11 @@ footer {
 }
 
 main {
+  background-color: var(--dark);
   #jumbotron{
     height:400px;
-    overflow: hidden;
+    overflow-y: hidden;
+    width: 100vw;
     img{
       width:100%;
       height: auto;
@@ -59,10 +75,12 @@ main {
   }
 
   #comic_thumb{
-    
+    background-color: transparent;
+    color: white;
+    text-transform: uppercase;
     img{
       width: 100%;
-      height: 300px;
+      height: 250px;
       object-fit: cover;
       object-position: center top;
     }
