@@ -13,9 +13,9 @@
         <div class="col">
         
           <div class="card border-0" id="comic_thumb">
-            <img src="{{ $comics['thumb']}}" alt="" class="card-img-top img-fluid">
+            <img src="{{ $comic['thumb']}}" alt="" class="card-img-top img-fluid">
             <div class="card-body">
-              {{$comics['title']}}
+              {{$comic['title']}}
             </div>
           </div>
 
