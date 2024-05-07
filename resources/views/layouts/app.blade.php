@@ -15,7 +15,7 @@
 
   @include('partials.header')
 
-  <main>
+  <main class="min-vh-100">
     @yield('content')
   </main>
 

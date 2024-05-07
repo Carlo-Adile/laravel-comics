@@ -1,1 +1,45 @@
 @import '~bootstrap/scss/bootstrap';
+
+footer {
+  h4 {
+    color: white;
+    margin-bottom: 1rem;
+  }
+
+  ul {
+    padding-bottom: 1rem;
+  }
+
+  ul,
+  li,
+  a {
+    list-style: none;
+    text-decoration: none;
+    color: grey;
+  }
+
+  p {
+    color: grey;
+
+    a {
+      color: #6767f7;
+    }
+  }
+
+  background-image: url('../img/footer-bg.jpg');
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+  
+}
+
+#logo_placeholder{
+  width: 100%;
+  height: 100%;
+  background-image: url('../img/dc-logo-bg.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
