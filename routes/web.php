@@ -14,12 +14,11 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-
     $comics = config('db.comics');
-
     return view('home', compact("comics"));
 })->name('home');
 
+/* single product */
 Route::get('/{coordinate}', function ($coordinate) {
     $comics = config('db.comics');
     if (array_key_exists($coordinate, $comics)){
