@@ -3,7 +3,7 @@
   <div class="container justify-content-start">
     <div id="logo_placeholder"></div>
     <div class="row">
-      <div class="col-2">
+      <div class="col-2 col-md-3 col-sm-4">
         <h4>DC COMICS</h4>
         <ul class="list-group">
           <li><a href="">Characters</a></li>

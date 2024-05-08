@@ -1,10 +1,11 @@
 @import '~bootstrap/scss/bootstrap';
 
-*{
+* {
   box-sizing: border-box;
 
 }
-:root{
+
+:root {
   --dark: #1c1c1c;
   --primary: #0282f9;
 }
@@ -40,12 +41,12 @@ footer {
   background-repeat: no-repeat;
   background-size: cover;
 
-  #top_section{
+  #top_section {
     background-color: var(--primary);
     color: white;
     text-transform: uppercase;
-    
-    a{
+
+    a {
       text-decoration: none;
     }
   }
@@ -64,28 +65,54 @@ footer {
 
 main {
   background-color: var(--dark);
-  #jumbotron{
-    height:400px;
+
+  #jumbotron {
+    height: 400px;
     overflow-y: hidden;
     width: 100vw;
-    img{
-      width:100%;
+
+    img {
+      width: 100%;
       height: auto;
     }
   }
 
-  #comic_thumb{
+  #comic_thumb {
     background-color: transparent;
     color: white;
     text-transform: uppercase;
-    img{
+
+    img {
       width: 100%;
       height: 250px;
       object-fit: cover;
       object-position: center top;
     }
-    
+
   }
 }
 
+#product {
+  h3, h4, h5 {
+    color: white;
+    text-transform: uppercase;
+  }
+  p{
+    color:white;
+  }
+}
 
+#single_comic {
+  background-color: transparent;
+  color: white;
+  text-transform: uppercase;
+
+  img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: center top;
+  }
+  
+
+}

@@ -20,3 +20,12 @@ Route::get('/', function () {
     return view('home', compact("comics"));
 })->name('home');
 
+Route::get('/{coordinate}', function ($coordinate) {
+    $comics = config('db.comics');
+    if (array_key_exists($coordinate, $comics)){
+        $selectedComic = $comics[$coordinate];
+        return view('product', compact('selectedComic'));
+    } else {
+        abort(404);
+    }
+})->name('product');

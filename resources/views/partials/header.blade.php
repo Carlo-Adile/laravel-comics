@@ -15,11 +15,11 @@
   {{-- navbar --}}
   <nav class="navbar navbar-expand-lg py-4 align-items-center">
     <div class="container">
-      <a href="" class="navbar-brand">
+      <a href="/" class="navbar-brand">
         <img src="{{ Vite::asset('resources/img/dc-logo.png') }}" alt="" width="60" height="60">
       </a>
       <ul class="navbar-nav mb-2 mb-lg-0">
-        <li class="nav-item"><a href="" class="nav-link">CHARACTERS</a></li>
+        <li class="nav-item"><a href="/" class="nav-link">CHARACTERS</a></li>
         <li class="nav-item"><a href="" class="nav-link">COMICS</a></li>
         <li class="nav-item"><a href="" class="nav-link">MOVIES</a></li>
         <li class="nav-item"><a href="" class="nav-link">TV</a></li>
