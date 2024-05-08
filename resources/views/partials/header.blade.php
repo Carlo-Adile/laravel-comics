@@ -13,10 +13,10 @@
     </nav>
   </section> --}}
   {{-- navbar --}}
-  <nav class="navbar navbar-expand-lg py-4 align-items-center">
+  <nav class="navbar navbar-expand-lg py-2 align-items-center">
     <div class="container">
       <a href="/" class="navbar-brand">
-        <img src="{{ Vite::asset('resources/img/dc-logo.png') }}" alt="" width="60" height="60">
+        <img src="{{ Vite::asset('resources/img/dc-logo.png') }}" alt="" width="48" height="48">
       </a>
       <ul class="navbar-nav mb-2 mb-lg-0">
         <li class="nav-item"><a href="/" class="nav-link">CHARACTERS</a></li>

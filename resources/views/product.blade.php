@@ -13,17 +13,20 @@
       <div class="col-8">
         <div class="d-flex flex-column h-100 py-2 justify-content-around">
           <div>
+            <p style="text-transform: uppercase">{{ $selectedComic['type'] }}</p>
             <h3>{{ $selectedComic['title'] }}</h3>
             <p>{{ $selectedComic['description'] }}</p>
           </div>
           <div>
             <h5>Price: {{ $selectedComic['price'] }}</h5>
-            <a href="" class="btn btn-primary btn-sm rounded-0">ADD TO CART</a>
           </div>
         </div>
       </div>
-      {{-- go home --}}
-      <a href="/" class="btn btn-primary mx-auto my-4"  role="button" style="width: 200px; border-radius: 0; font-weight: bold;">RETURN HOME</a>
+      {{-- buttons --}}
+      <div class="d-flex justify-content-center my-4">
+        <a href="/" class="btn btn-primary mx-2"  role="button" style="width: 200px; border-radius: 0; font-weight: bold;">FIND A COMIC SHOP</a>
+        <a href="/" class="btn btn-primary mx-2"  role="button" style="width: 200px; border-radius: 0; font-weight: bold;">RETURN HOME</a>
+      </div>
     </div>
   </div>
 
